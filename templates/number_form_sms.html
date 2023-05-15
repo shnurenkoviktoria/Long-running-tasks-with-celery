@@ -1,0 +1,5 @@
+<form method="POST" action="{% url 'sms' %}">
+    {% csrf_token %}
+    {{ form.as_p }}
+    СМС відправлена, очікуйте на повідомлення
+</form>

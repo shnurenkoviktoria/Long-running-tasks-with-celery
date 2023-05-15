@@ -1,0 +1,5 @@
+<form method="POST" action="{% url 'add_number %}">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Отримати СМС</button>
+</form>
